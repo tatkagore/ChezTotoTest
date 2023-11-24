@@ -17,7 +17,18 @@
 		42DC5DB02B03CA18009EEF19 /* InfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC5DAF2B03CA18009EEF19 /* InfosView.swift */; };
 		42DC5DB22B03D0CC009EEF19 /* Source.json in Resources */ = {isa = PBXBuildFile; fileRef = 42DC5DB12B03D0CC009EEF19 /* Source.json */; };
 		42DC5DB72B04D743009EEF19 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC5DB62B04D743009EEF19 /* RowView.swift */; };
+		7B3AEBFB2B0F63B7007ED86B /* ChezTotoViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEBFA2B0F63B7007ED86B /* ChezTotoViewModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B3AEBFC2B0F63B7007ED86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42DC5D902B03C3DE009EEF19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42DC5D972B03C3DE009EEF19;
+			remoteInfo = ChezToto;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		42DC5D982B03C3DE009EEF19 /* ChezToto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChezToto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,19 @@
 		42DC5DB12B03D0CC009EEF19 /* Source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Source.json; sourceTree = "<group>"; };
 		42DC5DB52B04D5AA009EEF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42DC5DB62B04D743009EEF19 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		7B3AEBF82B0F63B7007ED86B /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3AEBFA2B0F63B7007ED86B /* ChezTotoViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChezTotoViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		42DC5D952B03C3DE009EEF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B3AEBF52B0F63B7007ED86B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				42DC5D9A2B03C3DE009EEF19 /* ChezToto */,
+				7B3AEBF92B0F63B7007ED86B /* Tests */,
 				42DC5D992B03C3DE009EEF19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				42DC5D982B03C3DE009EEF19 /* ChezToto.app */,
+				7B3AEBF82B0F63B7007ED86B /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +125,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7B3AEBF92B0F63B7007ED86B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AEBFA2B0F63B7007ED86B /* ChezTotoViewModelTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +153,24 @@
 			productReference = 42DC5D982B03C3DE009EEF19 /* ChezToto.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7B3AEBF72B0F63B7007ED86B /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B3AEC002B0F63B7007ED86B /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				7B3AEBF42B0F63B7007ED86B /* Sources */,
+				7B3AEBF52B0F63B7007ED86B /* Frameworks */,
+				7B3AEBF62B0F63B7007ED86B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B3AEBFD2B0F63B7007ED86B /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 7B3AEBF82B0F63B7007ED86B /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,6 +183,10 @@
 				TargetAttributes = {
 					42DC5D972B03C3DE009EEF19 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					7B3AEBF72B0F63B7007ED86B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 42DC5D972B03C3DE009EEF19;
 					};
 				};
 			};
@@ -152,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				42DC5D972B03C3DE009EEF19 /* ChezToto */,
+				7B3AEBF72B0F63B7007ED86B /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +217,13 @@
 				42DC5DA32B03C3E0009EEF19 /* Preview Assets.xcassets in Resources */,
 				42DC5DB22B03D0CC009EEF19 /* Source.json in Resources */,
 				42DC5DA02B03C3E0009EEF19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B3AEBF62B0F63B7007ED86B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +244,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B3AEBF42B0F63B7007ED86B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3AEBFB2B0F63B7007ED86B /* ChezTotoViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B3AEBFD2B0F63B7007ED86B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42DC5D972B03C3DE009EEF19 /* ChezToto */;
+			targetProxy = 7B3AEBFC2B0F63B7007ED86B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		42DC5DA42B03C3E0009EEF19 /* Debug */ = {
@@ -314,7 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChezToto/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = K3WVRH5UCM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChezToto/Info.plist;
@@ -345,7 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChezToto/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = K3WVRH5UCM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChezToto/Info.plist;
@@ -368,6 +444,44 @@
 			};
 			name = Release;
 		};
+		7B3AEBFE2B0F63B7007ED86B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K3WVRH5UCM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tatiana-Simmer.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChezToto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChezToto";
+			};
+			name = Debug;
+		};
+		7B3AEBFF2B0F63B7007ED86B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K3WVRH5UCM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tatiana-Simmer.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChezToto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChezToto";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +499,15 @@
 			buildConfigurations = (
 				42DC5DA72B03C3E0009EEF19 /* Debug */,
 				42DC5DA82B03C3E0009EEF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B3AEC002B0F63B7007ED86B /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B3AEBFE2B0F63B7007ED86B /* Debug */,
+				7B3AEBFF2B0F63B7007ED86B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
