@@ -18,6 +18,9 @@
 		42DC5DB22B03D0CC009EEF19 /* Source.json in Resources */ = {isa = PBXBuildFile; fileRef = 42DC5DB12B03D0CC009EEF19 /* Source.json */; };
 		42DC5DB72B04D743009EEF19 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC5DB62B04D743009EEF19 /* RowView.swift */; };
 		7B3AEBFB2B0F63B7007ED86B /* ChezTotoViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AEBFA2B0F63B7007ED86B /* ChezTotoViewModelTest.swift */; };
+		7BAC21AB2B10D62400821590 /* ChezTotoModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC21AA2B10D62400821590 /* ChezTotoModelTest.swift */; };
+		7BAC21AF2B113C8E00821590 /* MenuViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC21AE2B113C8E00821590 /* MenuViewUITest.swift */; };
+		7BAC21B12B11DAAD00821590 /* RowViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC21B02B11DAAD00821590 /* RowViewUITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		42DC5DB62B04D743009EEF19 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		7B3AEBF82B0F63B7007ED86B /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3AEBFA2B0F63B7007ED86B /* ChezTotoViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChezTotoViewModelTest.swift; sourceTree = "<group>"; };
+		7BAC21AA2B10D62400821590 /* ChezTotoModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChezTotoModelTest.swift; sourceTree = "<group>"; };
+		7BAC21AE2B113C8E00821590 /* MenuViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewUITest.swift; sourceTree = "<group>"; };
+		7BAC21B02B11DAAD00821590 /* RowViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewUITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		42DC5D9A2B03C3DE009EEF19 /* ChezToto */ = {
 			isa = PBXGroup;
 			children = (
+				42DC5DB12B03D0CC009EEF19 /* Source.json */,
 				42DC5DB52B04D5AA009EEF19 /* Info.plist */,
 				42DC5DAC2B03C437009EEF19 /* ViewModel.swift */,
 				42DC5DB42B03D466009EEF19 /* Model */,
@@ -93,7 +100,6 @@
 				42DC5D9B2B03C3DE009EEF19 /* ChezTotoApp.swift */,
 				42DC5D9F2B03C3E0009EEF19 /* Assets.xcassets */,
 				42DC5DA12B03C3E0009EEF19 /* Preview Content */,
-				42DC5DB12B03D0CC009EEF19 /* Source.json */,
 			);
 			path = ChezToto;
 			sourceTree = "<group>";
@@ -129,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				7B3AEBFA2B0F63B7007ED86B /* ChezTotoViewModelTest.swift */,
+				7BAC21AA2B10D62400821590 /* ChezTotoModelTest.swift */,
+				7BAC21AE2B113C8E00821590 /* MenuViewUITest.swift */,
+				7BAC21B02B11DAAD00821590 /* RowViewUITest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -249,6 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B3AEBFB2B0F63B7007ED86B /* ChezTotoViewModelTest.swift in Sources */,
+				7BAC21AF2B113C8E00821590 /* MenuViewUITest.swift in Sources */,
+				7BAC21AB2B10D62400821590 /* ChezTotoModelTest.swift in Sources */,
+				7BAC21B12B11DAAD00821590 /* RowViewUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

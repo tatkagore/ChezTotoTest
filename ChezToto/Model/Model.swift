@@ -7,6 +7,14 @@
 
 import Foundation
 
+enum ModelDataError: Error {
+    case fileNotFound
+    case unknownError
+    case invalidData
+    case authenticationError
+    case serverUnavailable
+}
+
 // Represente l'objet plat, qui figurent sur la carte du menu
 struct Dish: Codable {
     var name: String
